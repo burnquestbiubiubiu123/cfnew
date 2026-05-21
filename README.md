@@ -34,6 +34,7 @@
 
 ## v2.9.8 更新
 
+- 传输优化（参考 [GrainTCP](https://github.com/ToiCF/GrainTCP)）：上传侧有界队列机会性合包、下载侧 BYOB + grain 小包聚合、直连 `request.fetcher.connect()` 并发拨号（4 路竞争首连）、UUID 纳秒级热路径校验
 - 订阅转换内部实现：Clash / Stash / Sing-box / Surge / Loon / Quantumult X 配置全部由 Worker 直接生成，不再依赖任何外部 sub-converter
   - 完整规则集：Clash 使用 Loyalsoldier `rule-providers`；Sing-box 使用 MetaCubeX SRS；Surge / Loon / QuanX 使用 ACL4SSR / blackmatrix7 远端规则
   - 各策略分组均包含「策略组 + 全部节点」，可直接切换具体节点（已移除「自动选择」url-test，避免周期性测速浪费请求）
