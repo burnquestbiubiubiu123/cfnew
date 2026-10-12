@@ -53,6 +53,8 @@ WS 两协议、XHTTP、SOCKS5 / HTTP / HTTPS 出站、`qj` 三种模式、`p/wk/
 
 ## 检查
 
+在源码仓库的 `cfnew-panel` 目录运行：
+
 ```bash
 npm test
 ```
